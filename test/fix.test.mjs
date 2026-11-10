@@ -297,3 +297,15 @@ test('compact-window on invalid settings.json is refused', () => {
   assert.deepEqual(res.skipped.map((s) => s.kind), ['compact-window']);
   assert.equal(res.backupDir, null);
 });
+
+test('guardCommand quotes guard path when claudeDir contains spaces', () => {
+  const spacedDir = path.join(os.tmpdir(), 'Claude Dir With Spaces');
+  const steps = planFix({ agents: [] }, { claudeDir: spacedDir });
+  const hookStep = steps.find((s) => s.kind === 'settings-hook');
+  assert.ok(hookStep);
+  const settings = path.join(spacedDir, 'settings.json');
+  put(settings, '{}');
+  applyFix([hookStep], { claudeDir: spacedDir });
+  const json = JSON.parse(get(settings));
+  assert.equal(json.hooks.PreToolUse[0].hooks[0].args[0], `"${path.join(spacedDir, 'fabletax', 'guard.mjs')}"`);
+});

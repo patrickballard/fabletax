@@ -28,12 +28,17 @@ function writeFile(p, data, defaultMode = 0o644) {
   fs.renameSync(tmp, real);
 }
 
-const guardCommand = (claudeDir, target) => ({
-  type: 'command',
-  command: 'node',
-  args: target && target !== 'sonnet' ? [dirs(claudeDir).guard, `--model=${target}`] : [dirs(claudeDir).guard],
-  timeout: 10,
-});
+const quoteIfSpaced = (p) => (p.includes(' ') && !p.startsWith('"') ? `"${p}"` : p);
+
+const guardCommand = (claudeDir, target) => {
+  const guard = quoteIfSpaced(dirs(claudeDir).guard);
+  return {
+    type: 'command',
+    command: 'node',
+    args: target && target !== 'sonnet' ? [guard, `--model=${target}`] : [guard],
+    timeout: 10,
+  };
+};
 
 const isOurs = (h) => /fabletax/i.test(JSON.stringify(h ?? '')) && /guard\.mjs/.test(JSON.stringify(h));
 
