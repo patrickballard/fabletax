@@ -1,10 +1,11 @@
 import { createReadStream } from 'node:fs';
 import { readdir, readFile, stat } from 'node:fs/promises';
 import { homedir } from 'node:os';
-import { basename, join, relative, sep } from 'node:path';
+import { basename, join, relative } from 'node:path';
 import { createInterface } from 'node:readline';
 import { normalizeUsage } from './cost.mjs';
 
+// os.homedir() is %USERPROFILE% on Windows, so this needs no platform branch.
 export const defaultClaudeDir = () => process.env.CLAUDE_CONFIG_DIR || join(homedir(), '.claude');
 
 const SYNTHETIC = '<synthetic>';
@@ -24,7 +25,7 @@ async function walk(dir, out = []) {
 // <slug>/<session>.jsonl is a main thread; <slug>/<session>/**/subagents/agent-<id>.jsonl
 // is a subagent. Anything else under projects/ is not ours.
 function classify(projectsDir, path) {
-  const parts = relative(projectsDir, path).split(sep);
+  const parts = relative(projectsDir, path).split(/[/\\]/);
   const name = parts[parts.length - 1].replace(/\.jsonl$/, '');
   if (parts.length === 2) return { slug: parts[0], sessionId: name, agentId: null };
   if (parts.length >= 4 && parts[parts.length - 2] === 'subagents') {

@@ -100,7 +100,7 @@ function main() {
   if (!absent(input.agent_id)) {
     const id = String(input.agent_id);
     if (!/^[\w.-]+$/.test(id) || id.includes('..')) return;
-    file = `${file.replace(/\.jsonl$/, '')}/subagents/agent-${id}.jsonl`;
+    file = path.join(file.replace(/\.jsonl$/, ''), 'subagents', `agent-${id}.jsonl`);
   }
   let from = null;
   try { from = lastModel(file); } catch {}
