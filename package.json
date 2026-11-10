@@ -1,0 +1,48 @@
+{
+  "name": "fabletax",
+  "version": "0.1.0",
+  "description": "Find the avoidable part of your Claude Code bill: context bloat, cold-cache resumes and subagents that inherited your most expensive model. Then fix it.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "fabletax": "bin/fabletax.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "files": [
+    "bin",
+    "src",
+    "hooks",
+    "skills",
+    "docs",
+    ".claude-plugin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "claude-code",
+    "claude",
+    "anthropic",
+    "fable",
+    "cost",
+    "tokens",
+    "subagents",
+    "cli",
+    "context",
+    "prompt-caching",
+    "llm-cost"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickballard/fabletax.git"
+  },
+  "homepage": "https://github.com/patrickballard/fabletax#readme",
+  "bugs": {
+    "url": "https://github.com/patrickballard/fabletax/issues"
+  }
+}

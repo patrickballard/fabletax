@@ -1,0 +1,13 @@
+{
+  "name": "fabletax",
+  "owner": {
+    "name": "fabletax"
+  },
+  "plugins": [
+    {
+      "name": "fabletax",
+      "source": "./",
+      "description": "Audit avoidable Claude Code spend and pin unpinned subagents to a cheaper model."
+    }
+  ]
+}

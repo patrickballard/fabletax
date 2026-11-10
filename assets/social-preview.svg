@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-label="fabletax: Find the tax on your Claude Code bill.">
+<title>fabletax</title>
+<defs>
+<radialGradient id="glow" cx="0.8" cy="0.9" r="0.7"><stop offset="0" stop-color="#ff7b72" stop-opacity="0.16"/><stop offset="1" stop-color="#ff7b72" stop-opacity="0"/></radialGradient>
+<clipPath id="crop"><rect x="0" y="0" width="1280" height="640"/></clipPath>
+</defs>
+<rect width="1280" height="640" fill="#0d1117"/>
+<rect width="1280" height="640" fill="url(#glow)"/>
+<text x="78" y="168" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="112" font-weight="700" fill="#e6edf3" textLength="672" lengthAdjust="spacing">fabletax</text>
+<text x="80" y="238" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="34" fill="#9da7b3">Find the tax on your Claude Code bill.</text>
+<g clip-path="url(#crop)" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="26" fill="#e6edf3">
+<text y="340" xml:space="preserve"><tspan x="78" textLength="1123.2" lengthAdjust="spacing" fill="#ff7b72">╭──────────────────────────────────────────────────────────────────────╮</tspan></text>
+<text y="380" xml:space="preserve"><tspan x="78" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="124.8" textLength="46.8" lengthAdjust="spacing" fill="#e6edf3">TAX</tspan><tspan x="234" textLength="109.2" lengthAdjust="spacing" fill="#ff7b72" font-weight="700">$757.84</tspan><tspan x="390" textLength="421.2" lengthAdjust="spacing" fill="#7d8590">40% of everything you spent</tspan><tspan x="1185.6" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="420" xml:space="preserve"><tspan x="78" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="1185.6" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="460" xml:space="preserve"><tspan x="78" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="124.8" textLength="140.4" lengthAdjust="spacing" fill="#e6edf3">Bloat tax</tspan><tspan x="390" textLength="109.2" lengthAdjust="spacing" fill="#e6edf3">$520.43</tspan><tspan x="546" textLength="561.6" lengthAdjust="spacing" fill="#e6edf3">9,837 turns carried over 200k tokens</tspan><tspan x="1185.6" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="500" xml:space="preserve"><tspan x="78" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="124.8" textLength="124.8" lengthAdjust="spacing" fill="#e6edf3">Idle tax</tspan><tspan x="390" textLength="109.2" lengthAdjust="spacing" fill="#e6edf3">$178.77</tspan><tspan x="546" textLength="546" lengthAdjust="spacing" fill="#e6edf3">103 resumes after the cache expired</tspan><tspan x="1185.6" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="540" xml:space="preserve"><tspan x="78" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="124.8" textLength="234" lengthAdjust="spacing" fill="#e6edf3">Inheritance tax</tspan><tspan x="405.59999999999997" textLength="93.6" lengthAdjust="spacing" fill="#e6edf3">$58.63</tspan><tspan x="546" textLength="452.4" lengthAdjust="spacing" fill="#e6edf3">114 subagents ran on Opus 5.5</tspan><tspan x="1185.6" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="580" xml:space="preserve"><tspan x="78" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="1185.6" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="620" xml:space="preserve"><tspan x="78" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="124.8" textLength="405.59999999999997" lengthAdjust="spacing" fill="#e6edf3">At this rate: ~$933/month.</tspan><tspan x="1185.6" textLength="15.6" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+</g>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "fabletax",
+  "version": "0.1.0",
+  "description": "Audits the avoidable part of your Claude Code spend (context bloat, cold-cache resumes, subagents that inherited the main model) and pins unpinned subagents to a cheaper model.",
+  "license": "MIT"
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="682" height="727" viewBox="0 0 682 727" role="img" aria-label="npx fabletax terminal output">
+<title>npx fabletax</title>
+<defs><clipPath id="win"><rect width="682" height="727" rx="10"/></clipPath></defs>
+<g clip-path="url(#win)">
+<rect width="682" height="727" fill="#0d1117"/>
+<rect width="682" height="40" fill="#161b22"/>
+<rect y="39" width="682" height="1" fill="#30363d"/>
+<circle cx="22" cy="20" r="6" fill="#ff5f56"/>
+<circle cx="42" cy="20" r="6" fill="#ffbd2e"/>
+<circle cx="62" cy="20" r="6" fill="#27c93f"/>
+<text x="341" y="24.5" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#7d8590">npx fabletax</text>
+<g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14" fill="#e6edf3">
+<text y="72" xml:space="preserve"><tspan x="38.8" textLength="411.6" lengthAdjust="spacing" fill="#7d8590">fabletax · last 30 days · prices as of 2026-11-10</tspan></text>
+<text y="114" xml:space="preserve"><tspan x="38.8" textLength="310.8" lengthAdjust="spacing" fill="#e6edf3">You spent                   $1,916.38</tspan><tspan x="374.8" textLength="134.4" lengthAdjust="spacing" fill="#7d8590">16,623 API calls</tspan></text>
+<text y="135" xml:space="preserve"><tspan x="55.6" textLength="294" lengthAdjust="spacing" fill="#e6edf3">main thread               $1,787.90</tspan></text>
+<text y="156" xml:space="preserve"><tspan x="55.6" textLength="294" lengthAdjust="spacing" fill="#e6edf3">subagents                   $128.48</tspan><tspan x="374.8" textLength="67.2" lengthAdjust="spacing" fill="#7d8590">145 runs</tspan></text>
+<text y="198" xml:space="preserve"><tspan x="38.8" textLength="604.8" lengthAdjust="spacing" fill="#ff7b72">╭──────────────────────────────────────────────────────────────────────╮</tspan></text>
+<text y="219" xml:space="preserve"><tspan x="38.8" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="64" textLength="25.2" lengthAdjust="spacing" fill="#e6edf3">TAX</tspan><tspan x="114.4" textLength="58.8" lengthAdjust="spacing" fill="#ff7b72" font-weight="700">$757.84</tspan><tspan x="198.4" textLength="226.8" lengthAdjust="spacing" fill="#7d8590">40% of everything you spent</tspan><tspan x="635.2" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="240" xml:space="preserve"><tspan x="38.8" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="635.2" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="261" xml:space="preserve"><tspan x="38.8" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="64" textLength="529.2" lengthAdjust="spacing" fill="#e6edf3">Bloat tax        $520.43   9,837 turns carried over 200k tokens</tspan><tspan x="635.2" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="282" xml:space="preserve"><tspan x="38.8" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="64" textLength="520.8" lengthAdjust="spacing" fill="#e6edf3">Idle tax         $178.77   103 resumes after the cache expired</tspan><tspan x="635.2" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="303" xml:space="preserve"><tspan x="38.8" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="64" textLength="470.4" lengthAdjust="spacing" fill="#e6edf3">Inheritance tax   $58.63   114 subagents ran on Opus 5.5</tspan><tspan x="635.2" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="324" xml:space="preserve"><tspan x="38.8" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="635.2" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="345" xml:space="preserve"><tspan x="38.8" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan><tspan x="64" textLength="218.4" lengthAdjust="spacing" fill="#e6edf3">At this rate: ~$933/month.</tspan><tspan x="635.2" textLength="8.4" lengthAdjust="spacing" fill="#ff7b72">│</tspan></text>
+<text y="366" xml:space="preserve"><tspan x="38.8" textLength="604.8" lengthAdjust="spacing" fill="#ff7b72">╰──────────────────────────────────────────────────────────────────────╯</tspan></text>
+<text y="408" xml:space="preserve"><tspan x="38.8" textLength="159.6" lengthAdjust="spacing" fill="#e6edf3">Bloat tax · $520.43</tspan></text>
+<text y="429" xml:space="preserve"><tspan x="55.6" textLength="571.2" lengthAdjust="spacing" fill="#e6edf3">Every turn re-reads the whole conversation. 9,837 turns carried more</tspan></text>
+<text y="450" xml:space="preserve"><tspan x="55.6" textLength="596.4" lengthAdjust="spacing" fill="#e6edf3">than 200k; the largest carried 967k. This is the cost of the part above</tspan></text>
+<text y="471" xml:space="preserve"><tspan x="55.6" textLength="42" lengthAdjust="spacing" fill="#e6edf3">200k.</tspan></text>
+<text y="492" xml:space="preserve"><tspan x="55.6" textLength="562.8" lengthAdjust="spacing" fill="#e6edf3">Fix: npx fabletax fix (sets auto-compact to 200k; undo with --undo)</tspan></text>
+<text y="534" xml:space="preserve"><tspan x="38.8" textLength="151.2" lengthAdjust="spacing" fill="#e6edf3">Idle tax · $178.77</tspan></text>
+<text y="555" xml:space="preserve"><tspan x="55.6" textLength="588" lengthAdjust="spacing" fill="#e6edf3">103 times you came back after the prompt cache had expired and paid to</tspan></text>
+<text y="576" xml:space="preserve"><tspan x="55.6" textLength="394.8" lengthAdjust="spacing" fill="#e6edf3">write 22.1M tokens of old context back into it.</tspan></text>
+<text y="597" xml:space="preserve"><tspan x="55.6" textLength="546" lengthAdjust="spacing" fill="#e6edf3">Fix: /compact or /clear before stepping away from a long session.</tspan></text>
+<text y="639" xml:space="preserve"><tspan x="38.8" textLength="201.6" lengthAdjust="spacing" fill="#e6edf3">Inheritance tax · $58.63</tspan></text>
+<text y="660" xml:space="preserve"><tspan x="55.6" textLength="604.8" lengthAdjust="spacing" fill="#e6edf3">114 of 145 subagent runs were dispatched without a model, so they ran on</tspan></text>
+<text y="681" xml:space="preserve"><tspan x="55.6" textLength="495.6" lengthAdjust="spacing" fill="#e6edf3">Opus 5.5. Cost: $117.26. Same tokens on Sonnet 5.5: $58.63.</tspan></text>
+<text y="702" xml:space="preserve"><tspan x="55.6" textLength="176.4" lengthAdjust="spacing" fill="#e6edf3">Fix: npx fabletax fix</tspan></text>
+</g>
+</g>
+<rect x="0.5" y="0.5" width="681" height="726" rx="10" fill="none" stroke="#30363d"/>
+</svg>
