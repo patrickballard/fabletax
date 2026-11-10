@@ -1,5 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -298,14 +299,18 @@ test('compact-window on invalid settings.json is refused', () => {
   assert.equal(res.backupDir, null);
 });
 
-test('guardCommand quotes guard path when claudeDir contains spaces', () => {
-  const spacedDir = path.join(os.tmpdir(), 'Claude Dir With Spaces');
-  const steps = planFix({ agents: [] }, { claudeDir: spacedDir });
-  const hookStep = steps.find((s) => s.kind === 'settings-hook');
-  assert.ok(hookStep);
-  const settings = path.join(spacedDir, 'settings.json');
+// The hook entry is exec form (command + args, no shell), so a path with
+// spaces must be written as-is: quoting it would make the quotes part of the
+// file name.
+test('the installed hook entry runs when the guard path contains spaces', () => {
+  const claudeDir = fs.mkdtempSync(path.join(os.tmpdir(), 'fabletax fix '));
+  const settings = path.join(claudeDir, 'settings.json');
   put(settings, '{}');
-  applyFix([hookStep], { claudeDir: spacedDir });
-  const json = JSON.parse(get(settings));
-  assert.equal(json.hooks.PreToolUse[0].hooks[0].args[0], `"${path.join(spacedDir, 'fabletax', 'guard.mjs')}"`);
+  const steps = planFix(auditConfig({ claudeDir, cwd: tmp(), env: {} }), { claudeDir, agents: false, compact: false });
+  applyFix(steps, { claudeDir });
+  const hook = JSON.parse(get(settings)).hooks.PreToolUse[0].hooks[0];
+  assert.deepEqual(hook.args, [path.join(claudeDir, 'fabletax', 'guard.mjs')]);
+  const run = spawnSync(hook.command, hook.args, { input: '{}', encoding: 'utf8' });
+  assert.equal(run.status, 0, run.stderr);
+  assert.equal(run.stdout, '');
 });

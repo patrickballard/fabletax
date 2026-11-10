@@ -241,21 +241,3 @@ test('latestVersion compares numerically', async () => {
   });
   assert.equal((await loadTranscripts({ claudeDir: root })).stats.latestVersion, '2.1.1000');
 });
-
-test('defaultClaudeDir on Windows resolves to %USERPROFILE%\\.claude when CLAUDE_CONFIG_DIR unset', () => {
-  const origPlatform = process.platform;
-  const origConfig = process.env.CLAUDE_CONFIG_DIR;
-  const origProfile = process.env.USERPROFILE;
-  try {
-    delete process.env.CLAUDE_CONFIG_DIR;
-    process.env.USERPROFILE = 'C:\\Users\\TestUser';
-    Object.defineProperty(process, 'platform', { value: 'win32', configurable: true });
-    assert.equal(defaultClaudeDir(), join('C:\\Users\\TestUser', '.claude'));
-  } finally {
-    Object.defineProperty(process, 'platform', { value: origPlatform, configurable: true });
-    if (origConfig !== undefined) process.env.CLAUDE_CONFIG_DIR = origConfig;
-    else delete process.env.CLAUDE_CONFIG_DIR;
-    if (origProfile !== undefined) process.env.USERPROFILE = origProfile;
-    else delete process.env.USERPROFILE;
-  }
-});

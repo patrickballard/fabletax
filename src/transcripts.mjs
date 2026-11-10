@@ -1,15 +1,12 @@
 import { createReadStream } from 'node:fs';
 import { readdir, readFile, stat } from 'node:fs/promises';
 import { homedir } from 'node:os';
-import { basename, join, relative, sep } from 'node:path';
+import { basename, join, relative } from 'node:path';
 import { createInterface } from 'node:readline';
 import { normalizeUsage } from './cost.mjs';
 
-export const defaultClaudeDir = () =>
-  process.env.CLAUDE_CONFIG_DIR ||
-  (process.platform === 'win32' && process.env.USERPROFILE
-    ? join(process.env.USERPROFILE, '.claude')
-    : join(homedir(), '.claude'));
+// os.homedir() is %USERPROFILE% on Windows, so this needs no platform branch.
+export const defaultClaudeDir = () => process.env.CLAUDE_CONFIG_DIR || join(homedir(), '.claude');
 
 const SYNTHETIC = '<synthetic>';
 const str = (v) => (typeof v === 'string' && v ? v : null);
